@@ -1,0 +1,254 @@
+# Cahier des Charges - Site Web Restaurant "Saveurs du Riad"
+
+## 1. Présentation du Restaurant
+
+### 1.1 Identité du Restaurant
+- **Nom du restaurant** : Saveurs du Riad
+- **Concept** : Restaurant traditionnel marocain de luxe
+- **Localisation** : 17, Avenue Hassan II, Guéliz, Marrakech, Maroc
+- **Année de création** : 2018
+- **Propriétaire** : Mohammed Alami
+
+### 1.2 Positionnement
+Saveurs du Riad est un restaurant haut de gamme situé dans le quartier moderne de Guéliz à Marrakech. Notre établissement propose une cuisine marocaine authentique revisitée avec une touche contemporaine. Nous mettons l'accent sur des ingrédients locaux de haute qualité et des recettes traditionnelles transmises de génération en génération.
+
+### 1.3 Public cible
+- Touristes étrangers en quête d'authenticité
+- Clientèle locale aisée
+- Professionnels pour déjeuners d'affaires
+- Couples et familles pour occasions spéciales
+- Âge moyen: 30-65 ans
+- Pouvoir d'achat: moyen à élevé
+
+### 1.4 Valeurs et philosophie
+- Excellence culinaire
+- Hospitalité marocaine traditionnelle
+- Respect du patrimoine gastronomique
+- Durabilité et sourcing local
+- Expérience immersive complète
+
+## 2. Caractéristiques du Restaurant
+
+### 2.1 Ambiance et décor
+Notre restaurant est installé dans un riad traditionnel rénové avec goût. L'architecture typique avec patio central et fontaine offre une ambiance authentique. Le décor associe éléments traditionnels (zellige, bois sculpté, tadelakt) et touches modernes épurées. Une terrasse sur le toit offre une vue panoramique sur la médina et l'Atlas.
+
+### 2.2 Offre culinaire
+- **Cuisine** : Marocaine traditionnelle contemporaine
+- **Spécialités** : Tajines, couscous, pastilla, mechoui, desserts marocains
+- **Particularités** : Menu dégustation "Voyage Royal", accord mets-thés, ateliers culinaires
+- **Prix moyen** : 400-600 MAD par personne (menu complet)
+
+### 2.3 Services proposés
+- Service à table uniquement (pas de livraison)
+- Privatisation possible pour événements
+- Ateliers de cuisine marocaine
+- Soirées à thème avec musique traditionnelle (vendredis et samedis)
+- Réservations en ligne et par téléphone
+
+### 2.4 Horaires d'ouverture
+- **Déjeuner** : 12h00 - 15h00
+- **Dîner** : 19h00 - 23h00
+- **Jours d'ouverture** : 7j/7
+- **Fermeture annuelle** : Dernière semaine de septembre
+
+## 3. Objectifs du Site Web
+
+### 3.1 Objectifs principaux
+1. Présenter le restaurant, son histoire et sa philosophie
+2. Mettre en valeur l'offre culinaire et l'ambiance unique
+3. Permettre aux clients de réserver une table en ligne
+4. Augmenter la visibilité du restaurant auprès des touristes étrangers
+5. Faciliter la communication avec les clients potentiels
+
+### 3.2 Objectifs secondaires
+1. Promouvoir les ateliers culinaires et événements spéciaux
+2. Recueillir des témoignages et avis de clients
+3. Partager quelques recettes et techniques de base (blog)
+4. Créer une base de données clients pour envoi de newsletters
+5. Présenter l'équipe et nos producteurs locaux
+
+### 3.3 Indicateurs de réussite
+- Augmentation des réservations en ligne de 30%
+- Réduction des appels téléphoniques pour informations de base
+- Augmentation de la notoriété internationale
+- Meilleur taux de remplissage pendant la basse saison
+- Inscription aux ateliers culinaires via le site
+
+## 4. Structure et Contenu du Site
+
+### 4.1 Architecture du site
+- **Page d'accueil** : Présentation générale, ambiance, actualités
+- **Notre histoire** : Histoire du lieu, du chef et de l'équipe
+- **Menu** : Carte et menus, spécialités, photos des plats
+- **Galerie** : Photos du restaurant, de l'ambiance et des plats
+- **Réservations** : Formulaire de réservation en ligne
+- **Événements** : Calendrier des soirées spéciales et ateliers
+- **Blog** : Articles sur la cuisine marocaine, quelques recettes
+- **Contact** : Coordonnées, plan d'accès, formulaire de contact
+
+### 4.2 Contenu spécifique requis
+- Textes en français, anglais et arabe
+- Photos professionnelles de haute qualité (plats, décor, ambiance)
+- Vidéo de présentation du restaurant (1 min max)
+- Témoignages de clients satisfaits
+- Biographie du chef et présentation de l'équipe
+- Menus détaillés avec descriptions et prix
+- Informations sur les allergènes et options végétariennes
+
+## 5. Exigences Fonctionnelles
+
+### 5.1 Système de réservation
+- Calendrier interactif montrant les disponibilités
+- Sélection du nombre de personnes (max 10)
+- Choix de la date et de l'heure
+- Possibilité d'indiquer des demandes spéciales
+- Confirmation par email et possibilité d'annulation
+- Notification automatique au restaurant
+
+### 5.2 Fonctionnalités souhaitées
+- Changement de langue (français, anglais, arabe)
+- Galerie photos avec diaporama
+- Formulaire de contact avec accusé de réception
+- Partage sur réseaux sociaux
+- Intégration Google Maps
+- Inscription à la newsletter
+- Affichage des événements à venir
+- Témoignages défilants
+
+### 5.3 Fonctionnalités optionnelles (si budget suffisant)
+- Visite virtuelle 360° du restaurant
+- Chat en direct pour questions
+- Système de fidélité/compte client
+- Réservation spécifique pour les ateliers culinaires
+- Section FAQ
+- Module d'avis clients
+
+## 6. Exigences Techniques
+
+### 6.1 Type de site souhaité
+- Site vitrine statique avec quelques fonctionnalités dynamiques
+- Développement sur mesure (pas de CMS)
+- Design responsive obligatoire
+
+### 6.2 Compatibilité
+- Navigateurs : Chrome, Firefox, Safari, Edge (dernières versions)
+- Appareils : ordinateurs, tablettes, smartphones
+- Systèmes d'exploitation : Windows, MacOS, iOS, Android
+
+### 6.3 Performances
+- Temps de chargement maximal de 3 secondes
+- Optimisation des images pour le web
+- Site léger compatible avec connexions moyennes
+
+### 6.4 Sécurité
+- Protection basique des formulaires
+- Certificat SSL
+- Protection contre les spams
+
+## 7. Charte Graphique
+
+### 7.1 Identité visuelle
+- **Logo** : Logo existant à intégrer (fourni en formats vectoriels)
+- **Couleurs principales** : 
+  - Terracotta (#B74C28)
+  - Vert olive (#637339)
+  - Ocre (#D19C4C)
+  - Bleu zellige (#186785)
+  - Beige clair (#F0E6D7)
+- **Police de caractères** : 
+  - Titres : Playfair Display
+  - Corps de texte : Open Sans
+  - Accents arabes : Amiri (pour les mots en arabe)
+
+### 7.2 Ambiance visuelle
+- Élégante et chaleureuse
+- Inspirée de l'artisanat marocain sans tomber dans le cliché
+- Motifs géométriques subtils
+- Espacement généreux, design aéré
+- Photos avec filtres chaleureux et cohérents
+
+### 7.3 Éléments graphiques souhaités
+- Motifs géométriques marocains en éléments décoratifs
+- Séparateurs de section inspirés des moucharabiehs
+- Icônes personnalisées pour la navigation
+- Animations subtiles au survol des éléments
+- Transition douce entre les pages
+
+## 8. Contraintes et Exigences
+
+### 8.1 Délais
+- **Livraison finale souhaitée** : [Date de votre remise de projet]
+- **Étapes intermédiaires** :
+  - Validation maquettes : à déterminer
+  - Premier prototype : à déterminer
+  - Tests utilisateurs : à déterminer
+  - Corrections et finalisation : à déterminer
+
+### 8.2 Budget
+- Budget fictif : 50 000 MAD (environ 5 000 €)
+- Priorité à la qualité visuelle et l'expérience utilisateur
+
+### 8.3 Maintenances et mises à jour
+- Site facilement modifiable par une personne non technique
+- Documentation d'utilisation à fournir
+- Mises à jour des menus et événements fréquentes
+- Statistiques de visite à intégrer (Google Analytics)
+
+### 8.4 Contraintes légales
+- Mention des informations légales obligatoires
+- Politique de confidentialité conforme RGPD
+- Accessibilité pour personnes handicapées (niveau A minimum)
+- Mentions légales concernant les allergènes et prix
+
+## 9. Livrables Attendus
+
+### 9.1 Conception
+- Maquettes des principales pages (format Figma ou équivalent)
+- Wireframes responsive
+- Arborescence détaillée du site
+- Parcours utilisateur pour la réservation
+
+### 9.2 Développement
+- Code source commenté
+- Site web fonctionnel hébergé
+- Base de données (si nécessaire pour les fonctionnalités)
+- Documentation technique
+
+### 9.3 Déploiement
+- Installation sur serveur d'hébergement
+- Configuration des emails
+- Tests fonctionnels
+- Formation à l'utilisation basique
+
+## 10. Annexes
+
+### 10.1 Références et inspiration
+- Sites de restaurants similaires appréciés :
+  - La Mamounia Restaurant (www.mamounia.com/fr/restaurants-bars)
+  - Dar Essalam (www.daressalam.com)
+  - La Grande Table Marocaine (royalmansour.com)
+- Éléments spécifiques appréciés : élégance, navigation fluide, belles photos
+
+### 10.2 Mots-clés SEO prioritaires
+- Restaurant marocain Marrakech
+- Cuisine traditionnelle marocaine
+- Meilleur restaurant Guéliz
+- Restaurant gastronomique Marrakech
+- Riad restaurant Maroc
+- Atelier cuisine marocaine
+- Fine dining Marrakech
+
+### 10.3 Content Marketing
+- Articles de blog prévus : origines du couscous, secrets des épices marocaines, histoire du thé à la menthe, etc.
+- Vidéos prévues : présentation du chef, gestes techniques de cuisine, visite des souks avec le chef
+
+## Contact Client
+
+**Mohammed Alami**  
+Propriétaire, Saveurs du Riad  
+Tél : +212 661 234 567  
+Email : contact@saveursriad.ma
+
+---
+
+Je reste à votre disposition pour toute information complémentaire ou précision. N'hésitez pas à me contacter si vous avez des questions sur ce cahier des charges.
