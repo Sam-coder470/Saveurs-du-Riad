@@ -3,34 +3,95 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Saveurs du Riad - Restaurant Marocain</title>
+		<title>Saveurs du Riad - Réservation</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Restaurant marocain à l’ambiance chaleureuse et traditionnelle. Couscous, tajines, thé à la menthe et plus encore." />
-		<meta name="keywords" content="restaurant marocain, cuisine marocaine, couscous, tajine, Saveurs du Riad" />
+		<meta name="description" content="Réservez votre table au restaurant marocain Saveurs du Riad. Profitez d'une expérience culinaire authentique dans une ambiance chaleureuse." />
+		<meta name="keywords" content="restaurant marocain, réservation, cuisine marocaine, couscous, tajine, Saveurs du Riad" />
 		<meta name="author" content="Codo Toafode Sam Loik Bidossessi - sam-toafode.wuaze.com" />
 	
 		<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,500,600,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
-
-		<meta property="og:title" content=""/>
-		<meta property="og:image" content=""/>
-		<meta property="og:url" content=""/>
-		<meta property="og:site_name" content=""/>
-		<meta property="og:description" content=""/>
-		<meta name="twitter:title" content="" />
-		<meta name="twitter:image" content="" />
-		<meta name="twitter:url" content="" />
-		<meta name="twitter:card" content="" />
-	
+		
+		<!-- Animate.css -->
 		<link rel="stylesheet" href="css/animate.css">
+		<!-- Icomoon Icon Fonts-->
 		<link rel="stylesheet" href="css/icomoon.css">
+		<!-- Bootstrap  -->
 		<link rel="stylesheet" href="css/bootstrap.css">
+		<!-- Flexslider  -->
 		<link rel="stylesheet" href="css/flexslider.css">
+		<!-- Theme style  -->
 		<link rel="stylesheet" href="css/style.css">
+		
+		<!-- Modernizr JS -->
 		<script src="js/modernizr-2.6.2.min.js"></script>
-		<!--[if lt IE 9]>
-		<script src="js/respond.min.js"></script>
-		<![endif]-->
+		
+		<!-- Sweet Alert -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+		
+		<!-- Custom style modifications -->
+		<style>
+			.reservation-feedback {
+				padding: 15px;
+				margin-bottom: 20px;
+				border-radius: 4px;
+				display: none;
+			}
+			.reservation-success {
+				background-color: rgba(76, 175, 80, 0.2);
+				border: 1px solid #4CAF50;
+				color: #2E7D32;
+			}
+			.reservation-error {
+				background-color: rgba(244, 67, 54, 0.2);
+				border: 1px solid #F44336;
+				color: #C62828;
+			}
+			.form-group label {
+				font-weight: 500;
+			}
+			.form-control {
+				margin-bottom: 15px;
+			}
+			.required-field::after {
+				content: "*";
+				color: #F44336;
+				margin-left: 4px;
+			}
+			.loading-spinner {
+				display: none;
+				text-align: center;
+				margin: 10px 0;
+			}
+			.loading-spinner .spinner-border {
+				width: 3rem;
+				height: 3rem;
+			}
+			.custom_select {
+				height: 54px;
+				appearance: none;
+				background-image: url('data:image/svg+xml;utf8,<svg fill="rgba(0,0,0,0.5)" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+				background-repeat: no-repeat;
+				background-position: right 10px center;
+				padding-right: 30px;
+			}
+			.time-select-wrapper {
+				position: relative;
+			}
+			.special-instructions {
+				resize: vertical;
+				min-height: 100px;
+			}
+			.btn-reservation {
+				transition: all 0.3s ease;
+				font-weight: 600;
+				letter-spacing: 1px;
+			}
+			.btn-reservation:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+			}
+		</style>
 	</head>
 	<body>
 		
@@ -38,33 +99,30 @@
 	
 	<div id="page">
 	<nav class="fh5co-nav" role="navigation">
-		<!-- <div class="top-menu"> -->
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 text-center logo-wrap">
-						<div id="fh5co-logo"><a href="index.html">Saveurs du Riad<span>.</span></a></div>
-					</div>
-					<div class="col-xs-12 text-center menu-1 menu-wrap">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="menu.html">Menu</a></li>
-							<li class="has-dropdown">
-								<a href="gallery.html">Gallery</a>
-								<ul class="dropdown">
-									<li><a href="events.html">Events</a></li>
-									<li><a href="food.html">Food</a></li>
-									<li><a href="coffees.html">Coffees</a></li>
-								</ul>
-							</li>
-							<li class="active"><a href="reservation.html">Reservation</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 text-center logo-wrap">
+					<div id="fh5co-logo"><a href="index.html">Saveurs du Riad<span>.</span></a></div>
 				</div>
-				
+				<div class="col-xs-12 text-center menu-1 menu-wrap">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="menu.html">Menu</a></li>
+						<li class="has-dropdown">
+							<a href="gallery.html">Gallery</a>
+							<ul class="dropdown">
+								<li><a href="events.html">Events</a></li>
+								<li><a href="food.html">Food</a></li>
+								<li><a href="coffees.html">Coffees</a></li>
+							</ul>
+						</li>
+						<li class="active"><a href="reservation.html">Reservation</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
 			</div>
-		<!-- </div> -->
+		</div>
 	</nav>
 
 	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image: url(images/hero_1.jpeg);" data-stellar-background-ratio="0.5">
@@ -74,7 +132,7 @@
 				<div class="col-md-12 text-center">
 					<div class="display-t js-fullheight">
 						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<h1>Réservez votre table dès aujourd’hui !</h1>
+							<h1>Réservez dès aujourd'hui !</h1>
 							<h2>Bienvenue à <em>Saveurs du Riad</em>, votre expérience culinaire marocaine authentique</h2>
 						</div>
 					</div>
@@ -83,8 +141,6 @@
 		</div>
 	</header>
 	
-
-	
 	<div id="fh5co-reservation-form" class="fh5co-section">
 		<div class="container">
 			<div class="row">
@@ -92,49 +148,178 @@
 					<h2>Réservation</h2>
 					<div class="row">
 						<div class="col-md-6">
-							<p>Réservez votre table chez Saveurs du Riad et vivez une expérience culinaire marocaine unique dans une ambiance chaleureuse et conviviale.</p>
+							<p>Réservez votre table chez Saveurs du Riad et vivez une expérience culinaire marocaine unique dans une ambiance chaleureuse et conviviale. Nous vous confirmerons votre réservation par email dans les plus brefs délais.</p>
 						</div>
 					</div>
 				</div>
 				
 				<div class="col-md-6 col-md-push-6 col-sm-6 col-sm-push-6">
-					<form action="#" id="form-wrap">
+					<!-- Notification alerts -->
+					<div id="reservationSuccess" class="reservation-feedback reservation-success">
+						<p><strong>Réservation effectuée avec succès !</strong> Vous recevrez bientôt un email de confirmation.</p>
+					</div>
+					<div id="reservationError" class="reservation-feedback reservation-error">
+						<p><strong>Erreur de réservation.</strong> Veuillez réessayer ou nous contacter directement.</p>
+					</div>
+					
+					<!-- Loading spinner -->
+					<div class="loading-spinner" id="loadingSpinner">
+						<div class="spinner-border text-primary" role="status">
+							<span class="sr-only">Chargement...</span>
+						</div>
+						<p class="mt-2">Traitement en cours...</p>
+					</div>
+					
+					<!-- Reservation form -->
+					<form action="https://formsubmit.co/samloik.codotoafode.77@edu.uiz.ac.ma" method="POST" id="reservationForm" class="animate-box">
+						<!-- FormSubmit configuration -->
+						<input type="hidden" name="_subject" value="Nouvelle réservation - Saveurs du Riad">
+						<input type="hidden" name="_template" value="table">
+						<input type="hidden" name="_captcha" value="false">
+						<input type="hidden" name="_next" value="https://votre-site.com/merci.html">
+						
 						<div class="row form-group">
-							<div class="col-md-12">
-								<label for="name">Votre nom</label>
-								<input type="text" class="form-control" id="name" placeholder="Entrez votre nom complet" required>
+							<div class="col-md-6">
+								<label for="name" class="required-field">Nom</label>
+								<input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" required>
+							</div>
+							<div class="col-md-6">
+								<label for="lastname" class="required-field">Prénom</label>
+								<input type="text" class="form-control" id="lastname" name="lastname" placeholder="Votre prénom" required>
 							</div>
 						</div>
+						
 						<div class="row form-group">
-							<div class="col-md-12">
-								<label for="many">Nombre de personnes</label>
-								<select name="many" id="many" class="form-control custom_select" required>
-									<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4+">4 et plus</option>
+							<div class="col-md-6">
+								<label for="email" class="required-field">Email</label>
+								<input type="email" class="form-control" id="email" name="email" placeholder="Votre adresse email" required>
+							</div>
+							<div class="col-md-6">
+								<label for="phone" class="required-field">Téléphone</label>
+								<input type="tel" class="form-control" id="phone" name="phone" placeholder="Votre numéro de téléphone" required>
+							</div>
+						</div>
+						
+						<div class="row form-group">
+							<div class="col-md-6">
+								<label for="date" class="required-field">Date</label>
+								<input type="date" class="form-control" id="date" name="date" required min="" value="">
+							</div>
+							<div class="col-md-6">
+								<label for="time" class="required-field">Heure</label>
+								<select class="form-control custom_select" id="time" name="time" required>
+									<option value="">Sélectionnez une heure</option>
+									<option value="12:00">12:00</option>
+									<option value="12:30">12:30</option>
+									<option value="13:00">13:00</option>
+									<option value="13:30">13:30</option>
+									<option value="14:00">14:00</option>
+									<option value="19:00">19:00</option>
+									<option value="19:30">19:30</option>
+									<option value="20:00">20:00</option>
+									<option value="20:30">20:30</option>
+									<option value="21:00">21:00</option>
+									<option value="21:30">21:30</option>
 								</select>
 							</div>
 						</div>
+						
 						<div class="row form-group">
-							<div class="col-md-12">
-								<label for="taskdatetime">Date et heure</label>
-								<input type="datetime-local" name="task-datetime" id="taskdatetime" class="form-control" required/>
+							<div class="col-md-6">
+								<label for="guests" class="required-field">Nombre de personnes</label>
+								<select class="form-control custom_select" id="guests" name="guests" required>
+									<option value="1">1 personne</option>
+									<option value="2" selected>2 personnes</option>
+									<option value="3">3 personnes</option>
+									<option value="4">4 personnes</option>
+									<option value="5">5 personnes</option>
+									<option value="6">6 personnes</option>
+									<option value="7+">7 personnes ou plus</option>
+								</select>
+							</div>
+							<div class="col-md-6">
+								<label for="occasion">Occasion spéciale</label>
+								<select class="form-control custom_select" id="occasion" name="occasion">
+									<option value="">Aucune occasion spéciale</option>
+									<option value="Anniversaire">Anniversaire</option>
+									<option value="Anniversaire de mariage">Anniversaire de mariage</option>
+									<option value="Dîner d'affaires">Dîner d'affaires</option>
+									<option value="Autre">Autre</option>
+								</select>
 							</div>
 						</div>
+						
 						<div class="row form-group">
 							<div class="col-md-12">
-								<input type="submit" class="btn btn-primary btn-outline btn-lg" value="Réserver">
+								<label for="special-requests">Demandes spéciales</label>
+								<textarea name="special-requests" id="special-requests" cols="30" rows="4" class="form-control special-instructions" placeholder="Allergies, préférences alimentaires, placement particulier..."></textarea>
+							</div>
+						</div>
+						
+						<div class="row form-group">
+							<div class="col-md-12">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" name="newsletter" value="yes"> Je souhaite m'abonner à la newsletter pour recevoir les offres spéciales et événements
+									</label>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row form-group">
+							<div class="col-md-12">
+								<button type="submit" class="btn btn-primary btn-outline btn-lg btn-block btn-reservation">Réserver maintenant</button>
 							</div>
 						</div>
 					</form>
 				</div>
 				
+				<div class="col-md-6 col-md-pull-6 col-sm-6 col-sm-pull-6">
+					<div class="fh5co-text animate-box" data-animate-effect="fadeInLeft">
+						<div class="section-heading">
+							<h2>Informations utiles</h2>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="feature-center">
+										<span class="icon">
+											<i class="icon-clock4"></i>
+										</span>
+										<div class="feature-text">
+											<h3 style="color: bisque;">Horaires d'ouverture</h3>
+											<p>Lundi - Dimanche<br>
+											Déjeuner: 12h00 - 14h30<br>
+											Dîner: 19h00 - 22h30</p>
+										</div>
+									</div>
+	
+									<div class="feature-center">
+										<span class="icon">
+											<i class="icon-info"></i>
+										</span>
+										<div class="feature-text">
+											<h3 style="color: bisque;">Politique de réservation</h3>
+											<p>Les réservations sont maintenues pendant 15 minutes après l'heure réservée. Pour les groupes de plus de 7 personnes, veuillez nous contacter directement par téléphone.</p>
+										</div>
+									</div>
+	
+									<div class="feature-center">
+										<span class="icon">
+											<i class="icon-phone"></i>
+										</span>
+										<div class="feature-text">
+											<h3 style="color: bisque;">Besoin d'aide ?</h3>
+											<p>Pour toute question concernant votre réservation ou pour des demandes spéciales, n'hésitez pas à nous contacter au <a href="tel:+212612345678">+212 6 12 34 56 78</a> ou par email à <a href="mailto:contact@saveursduriad.ma">contact@saveursduriad.ma</a>.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 	
-
 	<div id="fh5co-featured-testimony" class="fh5co-section">
 		<div class="container">
 			<div class="row">
@@ -142,7 +327,7 @@
 					<h2>Témoignages</h2>
 					<div class="row">
 						<div class="col-md-6">
-							<p>Nos clients viennent de partout pour découvrir l’authenticité et la richesse de la cuisine marocaine. Voici ce qu’ils pensent de leur expérience culinaire au sein de notre établissement.</p>
+							<p>Nos clients viennent de partout pour découvrir l'authenticité et la richesse de la cuisine marocaine. Voici ce qu'ils pensent de leur expérience culinaire au sein de notre établissement.</p>
 						</div>
 					</div>
 				</div>
@@ -153,29 +338,14 @@
 				
 				<div class="col-md-7 animate-box" data-animate-effect="fadeInRight">
 					<blockquote>
-						<p>&ldquo;J’ai voyagé à travers le Maroc, mais c’est ici que j’ai goûté l’un des meilleurs tajines de ma vie. L’accueil est chaleureux, l’ambiance féerique, et chaque bouchée est une découverte. Un vrai régal !&rdquo;</p>
+						<p>&ldquo;J'ai voyagé à travers le Maroc, mais c'est ici que j'ai goûté l'un des meilleurs tajines de ma vie. L'accueil est chaleureux, l'ambiance féerique, et chaque bouchée est une découverte. Un vrai régal !&rdquo;</p>
 						<p class="author"><cite>&mdash; Claire Dubois, Paris</cite></p>
 					</blockquote>
 				</div>
 			</div>
 		</div>
 	</div>
-
 	
-	<div id="fh5co-started" class="fh5co-section animate-box" style="background-image: url(images/hero_1.jpeg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Réservez Votre Table</h2>
-					<p>Envie d’un voyage culinaire au cœur du Maroc ? Réservez votre table et laissez-vous envoûter par les saveurs authentiques, le cadre enchanteur et l’accueil chaleureux de Saveurs du Riad.</p>
-					<p><a href="reservation.html" class="btn btn-primary btn-outline">Réserver maintenant</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-
 	<footer id="fh5co-footer" role="contentinfo" class="fh5co-section">
 		<div class="container">
 			<div class="row row-pb-md">
@@ -252,15 +422,14 @@
 	<script src="js/jquery.stellar.min.js"></script>
 	<!-- Flexslider -->
 	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Sweet Alert -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
 
-	<!-- Date Time -->
-	<script src="js/moment.min.js"></script>
-	<script src="js/bootstrap-datetimepicker.js"></script>
-	
-
-	<!-- Main -->
+	<!-- Main JS -->
 	<script src="js/main.js"></script>
+	
+	<!-- Custom JS for reservation -->
+	<script src="js/reservation.js"></script>
 
 	</body>
 </html>
-
