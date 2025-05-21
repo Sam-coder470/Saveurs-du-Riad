@@ -57,32 +57,25 @@
 			.find('li')
 			.removeClass('has-dropdown');
 
-		// Hover dropdown menu on mobile
-		$('.offcanvas-has-dropdown').mouseenter(function(){
-			var $this = $(this);
-
-			$this
-				.addClass('active')
-				.find('ul')
-				.slideDown(500, 'easeOutExpo');				
-		}).mouseleave(function(){
-
-			var $this = $(this);
-			$this
-				.removeClass('active')
-				.find('ul')
-				.slideUp(500, 'easeOutExpo');				
+		// Click dropdown menu on mobile
+		$('.offcanvas-has-dropdown > a').on('click', function(e) {
+			e.preventDefault();
+			var $this = $(this).parent();
+			
+			if ($this.hasClass('active')) {
+				$this.removeClass('active');
+				$this.find('ul').slideUp(500, 'easeOutExpo');
+			} else {
+				$this.addClass('active');
+				$this.find('ul').slideDown(500, 'easeOutExpo');
+			}
 		});
 
-
 		$(window).resize(function(){
-
 			if ( $('body').hasClass('offcanvas') ) {
-
-    			$('body').removeClass('offcanvas');
-    			$('.js-fh5co-nav-toggle').removeClass('active');
-				
-	    	}
+				$('body').removeClass('offcanvas');
+				$('.js-fh5co-nav-toggle').removeClass('active');
+			}
 		});
 	};
 
