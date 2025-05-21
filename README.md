@@ -44,7 +44,7 @@ les-saveurs-du-riad/
 
 1. Clonez le repository :
 ```bash
-git clone https://github.com/votre-username/les-saveurs-du-riad.git
+git clone https://github.com/Sam-coder470/Saveurs-du-Riad.git
 ```
 
 2. Ouvrez le projet dans votre éditeur de code préféré
